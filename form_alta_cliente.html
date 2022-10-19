@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <!-- Íconos de FontAwesome -->
+    <script src="https://kit.fontawesome.com/6b4c89b0a1.js" crossorigin="anonymous"></script> 
+    
+
+ <!-- Fuentes de Google -->   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Ubuntu', cursive;
+            font-size: 20px;
+        }
+
+        p.italic {font-style: italic;}
+
+    </style>
+
+    
+    <title>Ejemplo con formularios - III</title>
+</head>
+
+<body>
+    <h3 class="italic">Formulario de Contacto - Sastrería     <span class="fas fa-thumbs-up"></span> </h3>
+
+
+    <form action="mostrar_datos.html" target="_blank">
+        <!-- Ingreso del nombre Contacto para Sastrería-->
+
+        <fieldset>
+            
+            <label for="nombre">Nombre: </label>
+            <input size="30" type="text" name="nombre" placeholder="Ingrese su nombre aqui..." >
+            <br><br>
+
+            <!-- Ingreso del apellido -->
+            <label for="apellido">Apellido: </label>
+            <input size="30" type="text" name="apellido" placeholder="Ingrese su apellido aqui..." >
+            <br><br>
+
+            <!-- Ingreso del DNI -->
+            <label for="dni">Nro DNI: </label>
+            <input type="number" name="dni">
+
+            <!-- Ingreso Fecha de nacimiento -->
+            <label for="fecha">Fecha de nacimiento: </label>
+            <input type="date" name="fecha">
+            <br><br>
+
+            <!-- Usuario y contraseña -->
+            <label for="user">Usuario: </label>
+            <input size="10" type="text" name="user" >
+            <label for="pass">Clave: </label>
+            <input size="10" type="password" name="pass">
+            <br><br>
+
+
+            <!-- Ingreso de la dirección -->
+            <label for="campodir">Calle: </label>
+            <input size="20" type="text" name="direccion" id="campodir">
+            <label for="dirnumero">Número: </label>
+            <input type="number" name="dirnumero">
+            <br><br>
+
+            <!-- Seleccion de la zona -->
+            Seleccione zona geográfica:
+            <select name="zona">
+                <option>Centro</option>
+                <option>Norte</option>
+                <option>Sur</option>
+                <option>Otros</option>
+            </select>
+            <br><br>
+
+            <!-- Ingreso de la dirección de correo-->
+            <label for="email">email: </label>
+            <input type="email" name="email">
+            <br><br>
+
+            <!-- Ingreso de un archivo-->
+            <label for="foto">Foto: </label>
+            <input type="file" name="foto">
+            <br><br>
+
+            <!-- Selector de color-->
+            <label for="color">Color favorito:</label>
+            <input name="color" type="color">
+        </fieldset>
+
+        <!-- Seleccion de intereses -->
+        <fieldset>
+            <legend>Intereses personales:</legend>
+            <input type="checkbox" id="sacos" name="intereses" value="Sacos">
+            <label for="sacos">Sacos</label>
+
+            <input type="checkbox" id="pantalones" name="intereses" value="Pantalones">
+            <label for="pantalones">Pantalones</label>
+
+            <input type="checkbox" id="corbatas" name="intereses" value="Corbatas">
+            <label for="corbatas">Corbatas</label>
+
+            <input type="checkbox" id="otros" name="intereses" value="Otros">
+            <label for="otros">Otros</label>
+        </fieldset>
+
+        <!-- Seleccion de Novedades -->
+        <fieldset>
+            <legend>Desea recibir Novedades por... </legend>
+            <input type="radio" id="mail" name="novedades" value="MAIL">
+            <label for="mail">Mail</label><br>
+
+            <input type="radio" id="whatsapp" name="novedades" value="WHATS">
+            <label for="whatsapp">Whatsapp</label><br>
+
+            <input type="radio" id="correo" name="novedades" value="CORREO">
+            <label for="correo">Correo</label>
+        </fieldset>
+        <br>
+
+        <!-- Comentario -->
+        <label for="comentario">Comentario:</label><br>
+        <textarea name="comentario" id="comentario" cols="40" rows="3"></textarea>
+
+        <!-- Botones para controlar el formulario -->
+        <br><br>
+        <input type="reset" value="Borrar formulario">
+        <input type="submit" value="Enviar datos">
+    </form>
+
+
+</body>
+</html>
