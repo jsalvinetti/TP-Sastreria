@@ -15,6 +15,7 @@ boton.addEventListener('click', function verCiudad(data) {
                 document.querySelector("#ciudad").textContent = data.name; 
                 temp.textContent = data.main.temp; 
                 temp.innerHTML = temp.textContent + '<sup>°C</sup>';
+                //API
                 imagen.src = "http://openweathermap.org/img/wn/" + data.weather[0].icon + "@2x.png" 
                 descripcion.textContent = data.weather[0].description;   
                 
