@@ -21,7 +21,8 @@ error.style.color = 'red';
 
  //   return false;
 
-//}
+//} 
+
 
 var form = document.getElementById('formulario');
     form.addEventListener('submit', function(evt){
