@@ -2,119 +2,123 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
-    
-     <!-- Bootstrap con esto los botones salen con colores y estilos según clase-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Grid para darle color a los paneles-->
-    <link rel="stylesheet" href="grid_style.css">
+  <!-- Bootstrap con esto los botones salen con colores y estilos según clase-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 
-     <!-- Íconos de FontAwesome -->
-     <script src="https://kit.fontawesome.com/6b4c89b0a1.js" crossorigin="anonymous"></script> 
+  <!-- Grid para darle color a los paneles-->
+  <link rel="stylesheet" href="grid_style.css">
+
+  <!-- Íconos de FontAwesome -->
+  <script src="https://kit.fontawesome.com/6b4c89b0a1.js" crossorigin="anonymous"></script>
 
 
-    <title>Outlet Sastrería Salvinetti</title>
+  <title>Outlet Sastrería Salvinetti</title>
 
-    <style>
-
+  <style>
     /*Transiciones*/
 
-      .contenedor_botones {
-          width: 100%;
-          height: 60px;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          background: linear-gradient(blue, lightblue);
-      }
+    .contenedor_botones {
+      width: 100%;
+      height: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(blue, lightblue);
+    }
 
-      /* Estilo de la lista */
-      ul {
-          margin: 0px;
-          padding: 0px;
-          display: flex;
-      }
+    /* Estilo de la lista */
+    ul {
+      margin: 0px;
+      padding: 0px;
+      display: flex;
+    }
 
-      /* Estilo de los elementos li */
-      ul li {
-          list-style: none;
-          margin: 0 15px;
-          transition: 0.4s;
-      }
+    /* Estilo de los elementos li */
+    ul li {
+      list-style: none;
+      margin: 0 15px;
+      transition: 0.4s;
+    }
 
-      /* Estilo de los links dentro de la lista */
-      ul li a {
-          display: block;
-          text-decoration: none;
-          position: relative;
-          font-family: Verdana, Geneva, Tahoma, sans-serif;
-          color: lightgrey;
-          font-size: 12px;
-          padding: 6px;
-          transition: 0.4s;
+    /* Estilo de los links dentro de la lista */
+    ul li a {
+      display: block;
+      text-decoration: none;
+      position: relative;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      color: lightgrey;
+      font-size: 12px;
+      padding: 6px;
+      transition: 0.4s;
 
-      }
+    }
 
-      /* Al pasar el mouse sobre la LISTA */
-      ul:hover li a {
-          transform: scale(1.2);
-          opacity: 0.7;
-          filter: blur(1px);
-      }
+    /* Al pasar el mouse sobre la LISTA */
+    ul:hover li a {
+      transform: scale(1.2);
+      opacity: 0.7;
+      filter: blur(1px);
+    }
 
-      /* Al pasar el mouse sobre un LINK dentro de la lista */
-      ul li a:hover { 
-          transform: scale(1.7);  /* Zoom */
-          opacity: 1;
-          filter: blur(0px);
-      }
+    /* Al pasar el mouse sobre un LINK dentro de la lista */
+    ul li a:hover {
+      transform: scale(1.7);
+      /* Zoom */
+      opacity: 1;
+      filter: blur(0px);
+    }
 
-      /* Al ENTRAR con el mouse sobre a link dentro de la lista */
-      ul li a:before { 
-          content: "";
-          position: absolute; /*Respecto de la caja del link*/
-          top: 0px;
-          left: 0px;
-          background: black;
-          width: 100%;        /*Respecto de la caja del link*/
-          height: 100%;       /*Respecto de la caja del link*/
-          transition: 0.4s;
-          transform-origin: right;
-          transform: scaleX(1.1);  /* Zoom */
-          z-index: -1;       /* Por detrás del texto del link*/
-      }
+    /* Al ENTRAR con el mouse sobre a link dentro de la lista */
+    ul li a:before {
+      content: "";
+      position: absolute;
+      /*Respecto de la caja del link*/
+      top: 0px;
+      left: 0px;
+      background: black;
+      width: 100%;
+      /*Respecto de la caja del link*/
+      height: 100%;
+      /*Respecto de la caja del link*/
+      transition: 0.4s;
+      transform-origin: right;
+      transform: scaleX(1.1);
+      /* Zoom */
+      z-index: -1;
+      /* Por detrás del texto del link*/
+    }
 
 
-      /* Al pasar el mouse compras superiores */
-t {
-            background: rgb(71, 112, 74);
-            color: rgb(243, 239, 242);
-            padding: 2px;
-            border: 1px solid #AAA;
-        }
+    /* Al pasar el mouse compras superiores */
+    t {
+      background: rgb(71, 112, 74);
+      color: rgb(243, 239, 242);
+      padding: 2px;
+      border: 1px solid #AAA;
+    }
 
-        t:hover {
-            background: #c3fabc;
-            color: green;
-            padding: 18px 24px;
-            border: 4px solid #888;
+    t:hover {
+      background: #c3fabc;
+      color: green;
+      padding: 18px 24px;
+      border: 4px solid #888;
 
-            transition-property: all;
-            /*Especifico que quiero modificar todas las propiedades*/
-            transition-duration: 2s;
-            transition-timing-function: ease-in;
-            /*Controla el tiempo de entrada y salida
+      transition-property: all;
+      /*Especifico que quiero modificar todas las propiedades*/
+      transition-duration: 2s;
+      transition-timing-function: ease-in;
+      /*Controla el tiempo de entrada y salida
                 ease-in: arranca más lento
                 ease-out: termina más lento
                 ease-in-out: arranca y termina más lento*/
-        }
-
+    }
   </style>
 </head>
 
@@ -122,45 +126,44 @@ t {
 <body>
   <br>
   <br>
-    <h1><b>Sastrería Salvinetti</b></h1>
-    <br>
+  <header class="titulo"> <b>Sastrería Salvinetti</b></header>
+  <br>
 
-         <div class="contenedor_botones">
-          <!-- Elementos del menu -->
-          <ul>
-              <li><a href="form_alta_cliente.html" target="_blank">ALTA DE CLIENTE</a></li>
-              <li><a href="#">CATEGORÍA</a></li>
-              <li><a href="#">PRODUCTOS</a></li>
-              <li><a href="#">PORTFOLIO</a></li>
-              <li><a href="#">CONTACTO</a></li>
-          </ul>
-      </div>
-      <br>
-      <br>
+  <nav class="contenedor_botones">
+    <!-- Elementos del menu -->
+    <ul>
+      <li><a href="form_alta_cliente.html" target="_blank">ALTA DE CLIENTE</a></li>
+      <li><a href='#mapa'>MAPA</a></li>
+      <li><a href='#video'>VIDEO</a></li>
+      <li><a href="contacto.html">CONTACTO</a></li>
+    </ul>
+  </nav>
+  <br>
+  <br>
 
-<!-- Carousel -->
-<div id="demo" class="carousel slide" data-bs-ride="carousel">
+  <!-- Carousel -->
+  <section id="demo" class="carousel slide" data-bs-ride="carousel">
 
     <!-- Indicators/dots -->
-    <div class="carousel-indicators">
+    <section class="carousel-indicators">
       <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
       <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
       <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
-    </div>
-    
+    </section>
+
     <!-- The slideshow/carousel -->
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="hombre-barbudo.webp" alt="Traje1" class="d-block w-100">
+        <img src="imagenes/hombre-barbudo.webp" alt="Traje1" class="d-block w-100">
       </div>
       <div class="carousel-item">
-        <img src="Medida 1.jpeg" alt="Traje2" class="d-block w-100">
+        <img src="imagenes/trajes a medida2.jpg" alt="Traje2" class="d-block w-100">
       </div>
       <div class="carousel-item">
-        <img src="Trajes caballero.jpg" alt="Traje3" class="d-block w-100">
+        <img src="imagenes/Trajes caballero.jpg" alt="Traje3" class="d-block w-100">
       </div>
     </div>
-    
+
     <!-- Left and right controls/icons -->
     <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
       <span class="carousel-control-prev-icon"></span>
@@ -177,93 +180,76 @@ t {
   <button type="button" class="btn"> <span class="fas fa-thin fa-truck"></span> ENVÍO GRATIS </button>
   <t>En compras superiores a $ 20.000!</t>
   <button type="button" class="btn"> <span class="fas fa-thin fa-credit-card"></span> 3 Y 6 CUOTAS SIN INTERÉS</button>
-  <button type="button" class="btn"> <span class="fas fa-thin fa-arrow-rotate-left"></span> ¿QUERÉS CAMBIARLO?</button>   
-  <br>
-
+  <button type="button" class="btn"> <span class="fas fa-thin fa-arrow-rotate-left"></span> ¿QUERÉS CAMBIARLO?</button>
   <br>
   <br>
+  <br>
 
+  <section>
+  <article class="mapa-container" id="mapa">
+    <!--Este div esta solamente para alinear el iframe-->
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d410.69819557166863!2d-58.46920129999999!3d-34.5640472!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb67dddf82ac7%3A0x879dce669b16f80c!2sSalvinetti!5e0!3m2!1ses-419!2sar!4v1665184984516!5m2!1ses-419!2sar"
+      width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade" width="560" height="315" style="border:0;" allowfullscreen=""
+      loading="lazy" title="Mapa Google"></iframe>
 
-    <p>Iframe (por <i>inline frame</i> o marco incorporado) es un elemento HTML que permite insertar o incrustar un
-        documento HTML dentro de un otro documento HTML principal. Fue introducido en 1997 y es aceptada como un
-        elemento estándar, ampliamente soportado por los navegadores.</p>
-
-
-    <div align="right"><!--Este div esta solamente para alinear el iframe-->
-        <iframe
-       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d410.69819557166863!2d-58.46920129999999!3d-34.5640472!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb67dddf82ac7%3A0x879dce669b16f80c!2sSalvinetti!5e0!3m2!1ses-419!2sar!4v1665184984516!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-            width="560" height="315" style="border:0;" allowfullscreen="" loading="lazy"
-            title="Mapa Google"></iframe>
-    </div>
-
-    <p>Los <i>iframe</i> poseen una gran cantidad de atributos, aunque no todos los objetos que incrustemos mediante
-        este sistema los soportarán a todos. Los más comunes son:</p>
-
-    <ul>
-        <li><b>width</b>: Ancho</li>
-        <li><b>height</b>: Alto</li>
-        <li><b>allowfullscreen</b>: Permite expandirlo a pantalla completa.</li>
-        <li><b>loading</b>: lazy gestiona la forma de carga</li>
-        <li><b>frameborder</b>: 0: sin borde y 1: con borde</li>
-        <li><b>title</b>: Titulo del iframe</li>
-        <li><b>scrolling</b>: Habilita las barras de desplazamiento si el contenido no cabe en el iframe. Con “yes”
-            aparecen siempre, con “auto” aparecen sólo si es necesario y con “no” no aparecerán nunca.</li>
-    </ul>
-
-
-
-    <div align="center">
-      <h4><b>Escuchá buena música mientras navegás por nuestra página  <span class="fas fa-thin fa-music"></span> 
-      </b></h4>
+      <aside id="video">
+        <h4><b>Escuchá buena música mientras navegás por nuestra página <span class="fas fa-thin fa-music"></span>
+          </b></h4>
         <!--Este div esta solamente para centrar el iframe-->
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/jEMoOd3hqTU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/jEMoOd3hqTU" title="YouTube video player"
+          frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </aside> 
+  </article>
+</section>
 
 
-    <div class="tiempo">   
-     <h5>¿Querés saber qué ropa tenés que comprar según el tiempo en tu ciudad? <span class="fas fa-thin fa-temperature-half"></span></h5>                                                                                 
-    <input type="text" class="input" placeholder="Ingresá una ciudad">                        
-    <button class="boton-enviar">Enviar</button> 
-    </div>
-
-    <div  align="center" class="container">
+   <section class="tiempo">
+    <h5>¿Querés saber qué ropa tenés que comprar según el tiempo en tu ciudad? <span
+        class="fas fa-thin fa-temperature-half"></span></h5>
+    <input type="text" class="input" placeholder="Ingresá una ciudad">
+    <button class="boton-enviar">Enviar</button>
+   </section>
+ 
+  <section class="clima-container">
     <p><span id="ciudad"></span></p>
     <p><span id="temperatura"></span></p>
     <div id="divo"> <img src='http://openweathermap.org/img/wn/02d@2x.png' alt="" id="icon"></div>
     <p><span id="desc"></span></p>
-
-    <p><span id="ropa"></span></p>
-
-  </div>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script src="archivo.js"></script> 
+  </section>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="archivo.js"></script>
 
 
+  <br>
+
+  <!-- Contenido del panel del footer -->
+  <footer>
+    <h2>Salvinetti</h2>
     <br>
-
-        <!-- Contenido del panel del footer -->
-        <div class="item pie">
-          <h2>Salvinetti</h2>
-          <br>
-          <b>Sastres Buenos Aires | Sastrería | Trajes a medida </b>
-          <br>
-          <br>
-          <b>Tel. 011-4542-8241 | Email: salvinetti@yahoo.com </b>
-          <br>
-          <b>Dirección: <i>Monroe 3354</i>, Ciudad Autónoma de Buenos Aires,
-            <i>Argentina</i>. </b>       
-            <br> 
-            <br>
-            <b> HORARIO DE TIENDA</b>
-            <br>
-            <b>Lunes a viernes: de 10.00 a 14.00h, y de 17.00 a 20.00h.</b>
-              <b>Sábado: de 10.00 a 14.00h.</b>
-        </div>
-    
-        <br>
+    <b>Sastres Buenos Aires | Sastrería | Trajes a medida </b>
     <br>
-  
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <br>
+    <b>Tel. 011-4542-8241 | Email: salvinetti@yahoo.com </b>
+    <br>
+    <b>Dirección: <i>Monroe 3354</i>, Ciudad Autónoma de Buenos Aires,
+      <i>Argentina</i>. </b>
+    <br>
+    <br>
+    <b> HORARIO DE TIENDA</b>
+    <br>
+    <b>Lunes a viernes: de 10.00 a 14.00h, y de 17.00 a 20.00h.</b>
+    <b>Sábado: de 10.00 a 14.00h.</b>
+  </footer>
+
+  <br>
+  <br>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
 
 
 </body>

@@ -1,0 +1,33 @@
+/*----------------------------------------------------------------*/
+/* Hoja de estilos Contacto                                       */
+/*----------------------------------------------------------------*/
+
+        body {
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        .items-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 80%;
+        }
+
+        a {
+            text-decoration: none;
+            color: #ed7420;
+        }
+
+        h2 a{
+            color: black;
+        }
+
+        .rrss{
+            display: flex;
+        }
+
+        .rrss h2{
+            margin: 10px;
+        }
+
+

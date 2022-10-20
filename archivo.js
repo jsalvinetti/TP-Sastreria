@@ -1,11 +1,11 @@
 
-let city = document.querySelector('input')
-let boton = document.querySelector('.boton-enviar')
-let temp = document.querySelector("#temperatura")
-let contenedor = document.querySelector(".container")
-let descripcion = document.querySelector("#desc")
-let imagen = document.querySelector("#icon")
-let ropa = document.querySelector("#ropa")
+let city = document.querySelector('input');
+let boton = document.querySelector('.boton-enviar');
+let temp = document.querySelector("#temperatura");
+let contenedor = document.querySelector('.clima-container');
+let descripcion = document.querySelector("#desc");
+let imagen = document.querySelector("#icon");
+
 
 boton.addEventListener('click', function verCiudad(data) { 
     ciudad = city.value; 

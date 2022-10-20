@@ -1,0 +1,11 @@
+/*----------------------------------------------------------------*/
+/* Hoja de estilos Alta Cliente                                   */
+/*----------------------------------------------------------------*/
+
+body {
+    font-family: 'Ubuntu', cursive;
+    font-size: 20px;
+}
+
+p.italic {font-style: italic;}
+
